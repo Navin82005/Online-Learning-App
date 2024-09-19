@@ -1,4 +1,5 @@
 # Learn It
+   It is a platform where a person can enrole in a course and take lessons. It helps in self-learning
 
 ## Installation
 To set up the project locally, follow these steps:
