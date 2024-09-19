@@ -17,7 +17,7 @@ class DurationWidget extends StatelessWidget {
         ),
         Text(
           " $duration",
-          style: GoogleFonts.robotoSerif(
+          style: GoogleFonts.robotoFlex(
             fontSize: 12,
             color: const Color(0xFF495768),
           ),

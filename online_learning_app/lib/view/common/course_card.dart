@@ -26,7 +26,7 @@ class CourseCard extends StatelessWidget {
             Image.asset(course.icon, height: 72, width: 72),
             Text(
               course.name,
-              style: GoogleFonts.robotoSerif(
+              style: GoogleFonts.robotoFlex(
                 fontWeight: FontWeight.w500,
                 fontSize: 15,
               ),

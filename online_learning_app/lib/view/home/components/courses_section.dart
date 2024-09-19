@@ -38,7 +38,7 @@ class CoursesSection extends StatelessWidget {
                       child: Image.asset(course.icon),
                     ),
                   ),
-                  title: Text(course.name, style: GoogleFonts.robotoSerif()),
+                  title: Text(course.name, style: GoogleFonts.robotoFlex()),
                   subtitle: CourseFooter(course: course),
                   onTap: () => Get.to(() => CoursePage(course: course)),
                 ),

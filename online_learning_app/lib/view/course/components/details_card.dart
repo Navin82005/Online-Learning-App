@@ -17,7 +17,7 @@ class DetailsCard extends StatelessWidget {
       children: [
         Text(
           "Our Students",
-          style: GoogleFonts.roboto(fontWeight: FontWeight.w500),
+          style: GoogleFonts.robotoFlex(fontWeight: FontWeight.w500),
         ),
         const SizedBox(height: 7),
         Padding(
@@ -26,12 +26,13 @@ class DetailsCard extends StatelessWidget {
         ),
         Text(
           name,
-          style: GoogleFonts.roboto(fontWeight: FontWeight.w500, fontSize: 20),
+          style:
+              GoogleFonts.robotoFlex(fontWeight: FontWeight.w500, fontSize: 20),
         ),
         const SizedBox(height: 10),
         Text(
           "A representation that can convey the three-dimensional aspects of a design through a two-dimensional medium.",
-          style: GoogleFonts.roboto(color: const Color(0xFF667181)),
+          style: GoogleFonts.robotoFlex(color: const Color(0xFF667181)),
           // fontWeight: FontWeight.w500, fontSize: 18),
         ),
         const SizedBox(height: 15),

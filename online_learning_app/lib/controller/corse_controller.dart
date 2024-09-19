@@ -7,7 +7,7 @@ class CourseController extends GetxController {
 
   fetchCourse() async {
     isLoading.value = true;
-    await Future.delayed(const Duration(seconds: 2));
+    // await Future.delayed(const Duration(seconds: 2));
     courses.value = [
       Course(
         name: "Photoshop Editing Course",

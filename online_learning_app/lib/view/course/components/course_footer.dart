@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:online_learning_app/model/course_model.dart';
 import 'package:online_learning_app/view/payment/payment.dart';
 
 class CourseBottomButton extends StatelessWidget {
-  const CourseBottomButton({super.key});
+  final Course course;
+  const CourseBottomButton({super.key, required this.course});
 
   @override
   Widget build(BuildContext context) {
@@ -33,7 +35,7 @@ class CourseBottomButton extends StatelessWidget {
               const SizedBox(width: 20),
               Expanded(
                 child: GestureDetector(
-                  onTap: () => Get.to(const PaymentScreen()),
+                  onTap: () => Get.to(PaymentScreen(course: course)),
                   child: Container(
                     height: 65,
                     decoration: BoxDecoration(
@@ -43,7 +45,7 @@ class CourseBottomButton extends StatelessWidget {
                     child: Center(
                       child: Text(
                         "Enroll Now",
-                        style: GoogleFonts.roboto(
+                        style: GoogleFonts.robotoFlex(
                           fontSize: 17,
                           fontWeight: FontWeight.bold,
                         ),

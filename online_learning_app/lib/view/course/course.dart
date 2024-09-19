@@ -51,7 +51,7 @@ class CoursePage extends StatelessWidget {
               child: LessonList(course: course),
             ),
           ),
-          const CourseBottomButton(),
+          CourseBottomButton(course: course),
         ],
       ),
     );

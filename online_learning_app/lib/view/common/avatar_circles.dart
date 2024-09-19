@@ -38,7 +38,7 @@ class AvatarCircles extends StatelessWidget {
               backgroundColor: color,
               child: Text(
                 "+$number",
-                style: GoogleFonts.robotoSerif(
+                style: GoogleFonts.robotoFlex(
                   color: Colors.white,
                 ),
               ),
@@ -48,7 +48,7 @@ class AvatarCircles extends StatelessWidget {
         const Spacer(),
         Text(
           "Participant",
-          style: GoogleFonts.robotoSerif(
+          style: GoogleFonts.robotoFlex(
             fontWeight: FontWeight.w500,
             fontSize: 12,
           ),

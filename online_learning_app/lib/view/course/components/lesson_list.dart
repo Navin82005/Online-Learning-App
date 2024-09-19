@@ -21,7 +21,7 @@ class LessonList extends StatelessWidget {
               child: ListTile(
                 title: Text(
                   video.videoName.toString(),
-                  style: GoogleFonts.roboto(
+                  style: GoogleFonts.robotoFlex(
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -65,7 +65,7 @@ class LessonList extends StatelessWidget {
                           width: 16,
                         ),
                         const Spacer(),
-                        Text("Play Video", style: GoogleFonts.roboto())
+                        Text("Play Video", style: GoogleFonts.robotoFlex())
                       ],
                     ),
                   ),

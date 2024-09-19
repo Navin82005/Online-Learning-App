@@ -17,7 +17,7 @@ class LessonsWidget extends StatelessWidget {
         ),
         Text(
           " ${lessons} Lessons",
-          style: GoogleFonts.robotoSerif(
+          style: GoogleFonts.robotoFlex(
               fontSize: 12, color: const Color(0xFF495768)),
         )
       ],

@@ -27,7 +27,7 @@ class CourseScreenHeader extends StatelessWidget {
           ),
           Text(
             "Details",
-            style: GoogleFonts.robotoSerif(
+            style: GoogleFonts.robotoFlex(
               fontWeight: FontWeight.bold,
               fontSize: 17,
             ),
