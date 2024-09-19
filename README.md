@@ -1,4 +1,4 @@
-# online_learning_app
+# Learn It
 
 ## Installation
 To set up the project locally, follow these steps:
