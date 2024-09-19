@@ -4,12 +4,12 @@
 ## Output
 <table>
   <tr>
-    <td><img src="https://github.com/Navin82005/Online-Learning-App/blob/main/output/app_icon.jpg" alt="App Icon" style="width: 100%;"/></td>
-    <td><img src="https://github.com/Navin82005/Online-Learning-App/blob/main/output/splash_screen.jpg" alt="Splash Screen" style="width: 100%;"/></td>
+    <td><img src="https://github.com/Navin82005/Online-Learning-App/blob/main/output/app_icon.jpg" alt="App Icon" style="width: 50%;"/></td>
+    <td><img src="https://github.com/Navin82005/Online-Learning-App/blob/main/output/splash_screen.jpg" alt="Splash Screen" style="width: 50%;"/></td>
   </tr>
   <tr>
-    <td><img src="https://github.com/Navin82005/Online-Learning-App/blob/main/output/home_screen.jpg" alt="Home Screen" style="width: 100%;"/></td>
-    <td><img src="https://github.com/Navin82005/Online-Learning-App/blob/main/output/course_screen.jpg" alt="Course Screen" style="width: 100%;"/></td>
+    <td><img src="https://github.com/Navin82005/Online-Learning-App/blob/main/output/home_screen.jpg" alt="Home Screen" style="width: 50%;"/></td>
+    <td><img src="https://github.com/Navin82005/Online-Learning-App/blob/main/output/course_screen.jpg" alt="Course Screen" style="width: 50%;"/></td>
   </tr>
 </table>
 
