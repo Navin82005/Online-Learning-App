@@ -11,19 +11,50 @@ class PopularCourse extends StatelessWidget {
   Widget build(BuildContext context) {
     popularCourseController.fetchPopularCourse();
 
-    return ListView(
-      scrollDirection: Axis.horizontal,
-      shrinkWrap: true,
-      children: [
-        ...popularCourseController.courses.map(
-          (course) => Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 7),
-            child: CourseCard(
-              course: course,
+    return GetX<PopularCourseController>(builder: (controller) {
+      if (controller.isLoading.value) {
+        return ListView(
+          scrollDirection: Axis.horizontal,
+          shrinkWrap: true,
+          children: [...renderLoaders()],
+        );
+      }
+      return ListView(
+        scrollDirection: Axis.horizontal,
+        shrinkWrap: true,
+        children: [
+          ...controller.courses.map(
+            (course) => Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 7),
+              child: CourseCard(
+                course: course,
+              ),
+            ),
+          )
+        ],
+      );
+    });
+  }
+
+  List<Widget> renderLoaders() {
+    List<Widget> l = [];
+
+    for (int i = 0; i < 5; i++) {
+      l += [
+        Container(
+          width: 220,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20),
+            color: Colors.white,
+          ),
+          child: const Center(
+            child: CircularProgressIndicator(
+              color: Color(0xFFb9dd6b),
             ),
           ),
         )
-      ],
-    );
+      ];
+    }
+    return l;
   }
 }
